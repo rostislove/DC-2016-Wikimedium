@@ -1,14 +1,17 @@
 article a {
   text-decoration: underline;
 }
+
 article > *:not(section) {
   width: 728px;
   margin: 0 auto;
 }
+
 article h1,
 article h2,
 article h3, {
   font-family: 'PT Sans Caption', sans-serif;
+  font-weight: bold;
   color: rgba(0, 0, 0, 1);
 }
 
@@ -16,15 +19,13 @@ article h1 {
   margin-top: 16px;
   font-size: 40px;
   line-height: 46px;
-  font-weight: 700;
   color: rgba(0, 0, 0, 1);
 }
 
 article h1 + p {
-  margin-top: 0;
+  margin-top: 14px;
   font-size: 22px;
   line-height: 32px;
-  letter-spacing: 0px;
   font-family: 'PT Sans Caption', sans-serif;
   color: rgba(0, 0, 0, 0.4);
 }
@@ -37,13 +38,10 @@ article h2 {
   margin-top: 43px;
   font-size: 32px;
   line-height: 36px;
-  font-weight: 700;
-  letter-spacing: -0.1px;
 }
 
 article h2 + p {
   margin-top: 7px;
-  letter-spacing: -0.1px;
 }
 
 article h3 {
@@ -104,23 +102,35 @@ article li + li {
   letter-spacing: 0px;
 }
 
-article > img {
+article > img,
+article > iframe {
   display: block;
   width: 1020px;
   margin: 80px auto;
 }
 
-article img + h2 {
+article img + h2,
+article iframe + h2 {
   margin-top: -1px;
 }
+
 article img + p,
 article img + blockquote,
-article img + ul {
+article img + ul,
+article iframe + p,
+article iframe + blockquote,
+article iframe + ul {
   margin-top: -3px;
 }
-article h2 + img {
+article h2 + img,
+article h2 + iframe {
   margin-top: 82px;
 }
-article h3 + img {
+article h3 + img,
+article h3 + iframe {
   margin-top: 81px;
+}
+
+article > iframe {
+  height: 574px;
 }

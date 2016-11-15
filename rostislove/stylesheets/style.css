@@ -8,7 +8,10 @@
 @import 'content.css';
 @import 'share.css';
 
-/* index */
+/* landing */
+@import 'landing.css';
+
+/* posts */
 @import "posts.css";
 
 /* post */

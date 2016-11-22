@@ -1,6 +1,10 @@
 /*body.landing > section {
   height: 800px;
 }*/
+body.landing * {
+  transition: all .3s ease;
+}
+
 .landingWrapper {
   position: relative;
   display: flex;
@@ -73,10 +77,10 @@
   background-size: cover;
 }
 #mockup1 {
-  width: 701px;
+  width: 732px;
   height: 660px;
-  top: 114px;
-  right: -85px;
+  top: 115px;
+  right: -116px;
   background-image: url(../images/landing/landing-mockup-1.jpg);
 }
 #mockup2 {
@@ -90,8 +94,75 @@
   background-image: url(../images/landing/landing-mockup-3.jpg);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1460px) {
   .landingWrapper {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  body.bg {
+    background-image: url(../images/index_mockup_ipad.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .landingWrapper {
+    width: 100%;
+    min-width: 910px;
+  }
+  .mainSection {
+    width: 1180px;
+    height: 568px;
+  }
+
+  .mainSection h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .mainSection p {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .mainSection section {
+    top: 105px;
+    width: 410px;
+  }
+  .mainSection.left section{
+    left: 192px;
+  }
+  .mainSection.right section{
+    right: 187px;
+  }
+  .mainSection section figure {
+    width: 147px;
+    height: 14px;
+    margin-top: 165px;
+  }
+  .mainSection.left section figure {
+    margin-left: -43px;
+  }
+  .mainSection.right section figure {
+    margin-left: 303px;
+  }
+  #mockup1 {
+    width: 521px;
+    height: 470px;
+    top: 85px;
+    right: 0px;
+  }
+  #mockup2 {
+    width: 380px;
+    height: 478px;
+    top: 70px;
+    left: 148px;
+  }
+
+  .mainSection.center h2{
+    font-size: 28px;
+    line-height: 41px;
+  }
+  .mainSection.center p {
+    margin-top: 27px;
   }
 }

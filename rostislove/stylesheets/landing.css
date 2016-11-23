@@ -1,6 +1,11 @@
 /*body.landing > section {
   height: 800px;
 }*/
+body.bg {
+  background-image: url(../images/index_mockup.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
 body.landing * {
   transition: all .3s ease;
 }
@@ -13,7 +18,6 @@ body.landing * {
   overflow: hidden;
 
   width: 1440px;
-  min-width: 1280px;
   margin: 0 auto;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 }
@@ -57,6 +61,7 @@ body.landing * {
 }
 .mainSection.center section {
   width: 100%;
+  top: 182px;
 }
 
 .mainSection section figure {
@@ -70,6 +75,22 @@ body.landing * {
 }
 .mainSection.right section figure {
   margin-left: 430px;
+}
+.mainSection.center section nav {
+  margin-top: 70px;
+  font-size: 0;
+}
+.mainSection.center section nav a {
+  margin: 0 10px;
+}
+.mainSection.center footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+.mainSection.center footer p {
+  font-size: 16px;
 }
 
 .mockup {
@@ -91,9 +112,17 @@ body.landing * {
   background-image: url(../images/landing/landing-mockup-2.jpg);
 }
 #mockup3 {
+  top: 97px;
+  right: -732px;
+  width: 1348px;
+  height: 779px;
   background-image: url(../images/landing/landing-mockup-3.jpg);
+  box-shadow: 0 2 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+
+
+/* медиа-запросы */
 @media screen and (max-width: 1460px) {
   .landingWrapper {
     width: 100%;
@@ -124,15 +153,22 @@ body.landing * {
     font-size: 18px;
     line-height: 27px;
   }
+  .mainSection.center h2{
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .mainSection.center p {
+    margin-top: 21px;
+  }
   .mainSection section {
     top: 105px;
     width: 410px;
   }
   .mainSection.left section{
-    left: 192px;
+    left: 190px;
   }
   .mainSection.right section{
-    right: 187px;
+    right: 190px;
   }
   .mainSection section figure {
     width: 147px;
@@ -145,6 +181,16 @@ body.landing * {
   .mainSection.right section figure {
     margin-left: 303px;
   }
+  .mainSection.center section nav {
+    margin-top: 50px;
+  }
+  .mainSection.center section nav a {
+    margin: 0 6px;
+  }
+  .mainSection.center footer p {
+    font-size: 12px;
+  }
+
   #mockup1 {
     width: 521px;
     height: 470px;
@@ -157,7 +203,13 @@ body.landing * {
     top: 70px;
     left: 148px;
   }
-
+  #mockup3 {
+    top: 97px;
+    right: -444px;
+    width: 960px;
+    height: 555px;
+    border-radius: 5px;
+  }
   .mainSection.center h2{
     font-size: 28px;
     line-height: 41px;

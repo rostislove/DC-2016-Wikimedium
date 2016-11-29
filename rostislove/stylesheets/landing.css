@@ -135,10 +135,6 @@ body.landing * {
     background-repeat: no-repeat;
     background-position: top center;
   }
-  .landingWrapper {
-    width: 100%;
-    min-width: 910px;
-  }
   .mainSection {
     width: 1180px;
     height: 568px;
@@ -210,6 +206,96 @@ body.landing * {
     height: 555px;
     border-radius: 5px;
   }
+  .mainSection.center h2{
+    font-size: 28px;
+    line-height: 41px;
+  }
+  .mainSection.center p {
+    margin-top: 27px;
+  }
+}
+
+/* Стили для ipad portrait*/
+@media screen and (max-width: 910px) {
+  body.bg {
+    background-image: url(../images/index_mockup_ipad_portrait.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+  .mainSection {
+    width: 910px;
+    height: 1024px;
+  }
+  .mainSection h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .mainSection p {
+    margin-top: 21px;
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .mainSection.center h2{
+    font-size: 28px;
+    line-height: 37px;
+  }
+  .mainSection.center p {
+    margin-top: 21px;
+  }
+  .mainSection section {
+    top: 100px;
+    width: 580px;
+  }
+  .mainSection.left section,
+  .mainSection.right section {
+    left: 165px;
+  }
+
+  .mainSection section figure {
+    width: 210px;
+    height: 20px;
+    margin-top: 100px;
+  }
+  .mainSection.left section figure,
+  .mainSection.right section figure {
+    margin-left: -60px;
+  }
+
+  .mainSection:nth-child(3) section figure {
+    margin-left: 430px;
+  }
+
+  .mainSection.center section nav {
+    margin-top: 50px;
+  }
+  .mainSection.center section nav a {
+    margin: 0 6px;
+  }
+  .mainSection.center footer p {
+    font-size: 12px;
+  }
+
+  #mockup1 {
+    top: 394px;
+    right: -34px;
+    width: 621px;
+    height: 560px;
+  }
+  #mockup2 {
+    top: 420px;
+    left: 333px;
+    width: 464px;
+    height: 584px;
+  }
+  #mockup3 {
+    top: auto;
+    bottom: -100px;
+    right: -30px;
+    width: 836px;
+    height: 483px;
+    border-radius: 5px;
+  }
+
   .mainSection.center h2{
     font-size: 28px;
     line-height: 41px;

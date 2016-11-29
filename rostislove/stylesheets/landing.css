@@ -9,6 +9,9 @@ body.bg {
 body.landing * {
   transition: all .3s ease;
 }
+.compact {
+  display: none;
+}
 
 .landingWrapper {
   position: relative;
@@ -88,6 +91,7 @@ body.landing * {
   bottom: 0;
   right: 0;
   width: 100%;
+  padding-bottom: 35px;
 }
 .mainSection.center footer p {
   font-size: 16px;
@@ -177,14 +181,12 @@ body.landing * {
   .mainSection.right section figure {
     margin-left: 303px;
   }
+
   .mainSection.center section nav {
     margin-top: 50px;
   }
   .mainSection.center section nav a {
     margin: 0 6px;
-  }
-  .mainSection.center footer p {
-    font-size: 12px;
   }
 
   #mockup1 {
@@ -222,6 +224,14 @@ body.landing * {
     background-repeat: no-repeat;
     background-position: top center;
   }
+
+  .full {
+    display: none;
+  }
+  .compact {
+    display: block;
+  }
+
   .mainSection {
     width: 910px;
     height: 1024px;
@@ -243,7 +253,7 @@ body.landing * {
     margin-top: 21px;
   }
   .mainSection section {
-    top: 100px;
+    top: 90px;
     width: 580px;
   }
   .mainSection.left section,
@@ -254,7 +264,7 @@ body.landing * {
   .mainSection section figure {
     width: 210px;
     height: 20px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .mainSection.left section figure,
   .mainSection.right section figure {
@@ -266,30 +276,28 @@ body.landing * {
   }
 
   .mainSection.center section nav {
-    margin-top: 50px;
+    margin-top: 130px;
   }
   .mainSection.center section nav a {
-    margin: 0 6px;
-  }
-  .mainSection.center footer p {
-    font-size: 12px;
+    margin: 0 10px;
   }
 
+
   #mockup1 {
-    top: 394px;
+    top: 375px;
     right: -34px;
     width: 621px;
     height: 560px;
   }
   #mockup2 {
-    top: 420px;
+    top: 415px;
     left: 333px;
     width: 464px;
     height: 584px;
   }
   #mockup3 {
     top: auto;
-    bottom: -100px;
+    bottom: 0;
     right: -30px;
     width: 836px;
     height: 483px;
@@ -297,10 +305,13 @@ body.landing * {
   }
 
   .mainSection.center h2{
-    font-size: 28px;
-    line-height: 41px;
+    font-size: 36px;
+    line-height: 46px;
   }
   .mainSection.center p {
-    margin-top: 27px;
+    margin-top: 35px;
+  }
+  .mainSection.center section {
+    top: 260px;
   }
 }

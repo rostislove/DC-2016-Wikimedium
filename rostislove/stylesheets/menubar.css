@@ -1,10 +1,12 @@
 .menubar {
+  width: 100%;
+}
+.menubar div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 50px;
   padding: 20px;
-  z-index: 1;
 }
 .logo {
   display: block;
@@ -15,7 +17,6 @@
 .about {
   font-size: 14px;
   line-height: 50px;
-  color: rgba(255, 0, 0, 0.2);
   transition: all .1s ease;
 }
 .about:hover {

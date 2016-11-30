@@ -9,6 +9,11 @@ body.bg {
 body.landing * {
   transition: all .3s ease;
 }
+body.landing .menubar div {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .compact {
   display: none;
 }
@@ -19,10 +24,10 @@ body.landing * {
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-
   width: 1440px;
   margin: 0 auto;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
 }
 .mainSection {
   position: relative;
@@ -54,6 +59,7 @@ body.landing * {
 
 .mainSection.center {
   text-align: center;
+  background-color: #FCFCFC;
 }
 .mainSection.center h2{
   font-size: 40px;
@@ -83,17 +89,22 @@ body.landing * {
   margin-top: 70px;
   font-size: 0;
 }
+.mainSection.center section .btn {
+  display: inline-block;
+  margin: 0 10px;
+}
 .mainSection.center section nav a {
   margin: 0 10px;
 }
 .mainSection.center footer {
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 100%;
   padding-bottom: 35px;
 }
 .mainSection.center footer p {
+  margin-bottom: 6px;
   font-size: 16px;
 }
 
@@ -314,4 +325,10 @@ body.landing * {
   .mainSection.center section {
     top: 260px;
   }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 2) {
+  #mockup1 { background-image: url(../images/landing/landing-mockup-1@2x.jpg);}
+  #mockup2 { background-image: url(../images/landing/landing-mockup-2@2x.jpg);}
+  #mockup3 { background-image: url(../images/landing/landing-mockup-3@2x.jpg);}
 }
